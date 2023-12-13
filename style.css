@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@300;500;600;700;800&display=swap');
+:root{
+    background: var(--Background-Color, #161513);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--Background-Color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+} 
+
+a{ 
+    text-decoration: none;
+    text-emphasis: none;
+    color: inherit;
+}
+button{
+    text-decoration: none;
+}
+
+
+ul li{
+    margin: 30px;
+    list-style: none;
+    
+}
+
+ul li a {
+    color: #f5f5f5;
+}
+.menu-home{
+    transition: ease-in;
+}
+.menu-home:hover{
+    background-color: #3f3f3f;
+    transform: scale(1.1);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.menu-projetos{ transition: 0.3s;}
+.menu-projetos:hover{
+    background-color: #3f3f3f;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.menu-exp { transition: 0.3s;}
+.menu-exp:hover{
+    background-color: #3f3f3f;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-contato{transition: 0.3s;}
+.menu-contato:hover{
+    background-color: #3f3f3f;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    height: 82.182px;
+    flex-shrink: 0;
+    opacity: 0.7;
+    background: #222;
+    box-shadow: 0px 4.364px 16px -2.182px rgba(0, 0, 0, 0.10);
+    transition: 0.3s;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 4.438rem;
+    color: #f5f5f5;
+    transition: 0.3s;
+}
+
+.foto-perfil{
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 22px;
+    transition: 0.3s ease;
+}
+.foto-perfil:hover{ transition: 0.3s ease;}
+
+gui-image{
+    transition: 0.3s ease;
+}
+
+gui-image:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.image-gui:hover{
+    transition: 0.3s ease;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.nome-principal{
+    color: #F5F5F5;
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 3.4rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 45px; /* 81.818% */
+    transition: 0.3s;
+    margin-bottom: 5px;
+}
+
+.nome-secundario{
+    background: var(--Primary-Gradient, linear-gradient( #FF8660 71.79%, #9A33FF 95.51%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Poppins";
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 45px;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.nome{
+      margin-top: 0.875rem;
+      transition: 0.3s;
+}
+
+.descriçao{
+    margin-top: 1.625rem;
+    color: #C5C5C5;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    transition: 0.3s;
+}
+
+.botao-linkedin{
+    cursor: pointer;
+    color: #161513;
+    margin: 0 20px;
+    font-family: "Poppins";
+    font-size: 1.313rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 195px;
+    height: 64px;
+    flex-shrink: 0;
+    transition: 0.3s;
+    border-radius: 50px;
+    border: 1px solid var(--Primary-Color, #FFF);
+    background-color: #F5F5F5;
+}
+.botao-curriculo{
+    text-decoration: none;
+    margin: 0 20px;
+    color: #f5f5f5;
+    font-family: "Poppins";
+    font-size: 1.313rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 204px;
+    height: 64px;
+    flex-shrink: 0;
+    border: 2px solid var(--Primary-Color, #FFF);
+    border-radius: 50px;
+    transition: 0.3s;
+    background-color: #161513;
+}
+
+.botoes{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transition: 0.3s;
+}
+
+.botao-linkedin:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.botao-curriculo:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+.sobre-mim{
+    background: var(--Primary-Gradient, linear-gradient( #FF8660 71.79%, #9A33FF 95.51%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 35.748px; /* 102.137% */
+    text-transform: uppercase;
+    margin-top: 100px;
+    
+}
+
+
+.tecnologias{
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-bottom: 0.2rem;
+    color:#C5C5C5;
+    font-family: "Poppins";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
+
+
+#html, #css, #bootstrap, #javascript, #python{
+    margin-right: 3.75rem;
+    margin-left: 55px;
+}
+.logos-lista{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+    left: -500px;
+}
+
+.texto-exp {
+    background: var(--Primary-Gradient, linear-gradient( #FF8660 71.79%, #9A33FF 95.51%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 35.748px; /* 102.137% */
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
+
+.dsop-logo {
+    display: flex;
+    float: left;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.dev-junior {
+    color: var(--Primary-Color, #FFF);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 21.74px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    float: left;
+    margin-bottom: 50px;
+    margin-top: -32px;
+    margin-left: 15px;
+
+
+}
+
+footer {
+    width: auto;
+    background-color: #191919;
+    padding: 80px 0;
+    margin-top: 200px;
+}
+
+.container-footer{
+    margin: auto;
+    padding: 0 4%;
+}
+
+.footer-col{
+    margin-left: 320px;
+    color: #C5C5C5;
+    font-weight: 300;
+}
+
+.mini-email{
+  margin: -4px 7px;
+  color: #C5C5C5;
+}
+.mini-whats{
+    width: 27px;
+    height: 27px;
+  margin: -8px 1px;
+  color: #C5C5C5;
+}
+
+.certificaçoes{
+    background: var(--Primary-Gradient, linear-gradient( #FF8660 71.79%, #9A33FF 95.51%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 35.748px; /* 102.137% */
+    text-transform: uppercase;
+    margin-bottom: 100px;
+}
