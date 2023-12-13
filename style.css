@@ -9,6 +9,7 @@
     box-sizing: border-box;
 }
 body {
+    min-width: 66%;
     background-color: var(--Background-Color);
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -23,65 +24,36 @@ button{
     text-decoration: none;
 }
 
-
-ul li{
-    margin: 30px;
-    list-style: none;
-    
-}
-
-ul li a {
-    color: #f5f5f5;
-}
-.menu-home{
-    transition: ease-in;
-}
-.menu-home:hover{
-    background-color: #3f3f3f;
-    transform: scale(1.1);
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.menu-projetos{ transition: 0.3s;}
-.menu-projetos:hover{
-    background-color: #3f3f3f;
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.menu-exp { transition: 0.3s;}
-.menu-exp:hover{
-    background-color: #3f3f3f;
-    transform: scale(1.1);
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.menu-contato{transition: 0.3s;}
-.menu-contato:hover{
-    background-color: #3f3f3f;
-    transform: scale(1.1);
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-
-
 html {
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    height: 82.182px;
-    flex-shrink: 0;
-    opacity: 0.7;
-    background: #222;
-    box-shadow: 0px 4.364px 16px -2.182px rgba(0, 0, 0, 0.10);
-    transition: 0.3s;
+nav ul {
+    margin: 0; 
+    padding: 0;
+    background-color: #191919;
+    text-align: center;
+    transition: 0.3s ease;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline;
+   font-weight: 600;
+   transition: 0.3s ease;
+}
+nav ul li a{
+    transition: 0.3s ease;
+    padding: 20px 30px;
+    color: #F5F5F5;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 5px;
+    
+}
+nav ul li a:hover{
+    background-color: #363636;
+  transition: 0.3s ease;: .1s;
 }
 
 .menu {
@@ -90,7 +62,7 @@ nav {
     text-align: center;
     gap: 4.438rem;
     color: #f5f5f5;
-    transition: 0.3s;
+    transition: 0.3s ease;: 0.3s;
 }
 
 .foto-perfil{
@@ -98,22 +70,22 @@ nav {
     display: flex;
     justify-content: center;
     margin-top: 22px;
-    transition: 0.3s ease;
+    transition: 0.3s ease;: 0.3s ease;
 }
-.foto-perfil:hover{ transition: 0.3s ease;}
-
-gui-image{
-    transition: 0.3s ease;
-}
+.foto-perfil:hover{ transition: 0.3s ease;: 0.3s ease;}
 
 gui-image:hover{
-    transition: 0.3s ease;
+    transition: 0.3s ease;: 0.3s ease;
     transform: scale(1.1);
+    cursor: pointer;
+}
+.image-gui{
+   
     cursor: pointer;
 }
 
 .image-gui:hover{
-    transition: 0.3s ease;
+    transition: 0.3s ease;: 0.3s ease;
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -126,7 +98,7 @@ gui-image:hover{
     font-style: normal;
     font-weight: 800;
     line-height: 45px; /* 81.818% */
-    transition: 0.3s;
+    transition: 0.3s ease;: 0.3s;
     margin-bottom: 5px;
 }
 
@@ -142,12 +114,12 @@ gui-image:hover{
     line-height: 45px;
     display: flex;
     justify-content: center;
-    transition: 0.3s;
+    transition: 0.3s ease;: 0.3s;
 }
 
 .nome{
       margin-top: 0.875rem;
-      transition: 0.3s;
+      transition: 0.3s ease;: 0.3s;
 }
 
 .descriçao{
@@ -160,7 +132,7 @@ gui-image:hover{
     font-weight: 300;
     line-height: normal;
     letter-spacing: 0.36px;
-    transition: 0.3s;
+    transition: 0.3s ease;: 0.3s;
 }
 
 .botao-linkedin{
@@ -175,7 +147,7 @@ gui-image:hover{
     width: 195px;
     height: 64px;
     flex-shrink: 0;
-    transition: 0.3s;
+    transition: 0.3s ease;: 0.3s;
     border-radius: 50px;
     border: 1px solid var(--Primary-Color, #FFF);
     background-color: #F5F5F5;
@@ -194,7 +166,7 @@ gui-image:hover{
     flex-shrink: 0;
     border: 2px solid var(--Primary-Color, #FFF);
     border-radius: 50px;
-    transition: 0.3s;
+    transition: 0.3s ease;: 0.3s;
     background-color: #161513;
 }
 
@@ -203,19 +175,19 @@ gui-image:hover{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    transition: 0.3s;
+    transition: 0.3s ease;: 0.3s;
 }
 
 .botao-linkedin:hover{
-    transition: 0.3s;
+    transition: 0.3s ease;: 0.3s;
     transform: scale(1.1);
 }
 .botao-curriculo:hover{
-    transition: 0.3s;
+    transition: 0.3s ease;: 0.3s;
     transform: scale(1.1);
 }
 
-.sobre-mim{
+#sobre-mim{
     background: var(--Primary-Gradient, linear-gradient( #FF8660 71.79%, #9A33FF 95.51%));
     background-clip: text;
     -webkit-background-clip: text;
@@ -298,7 +270,7 @@ gui-image:hover{
 }
 
 footer {
-    width: auto;
+    width: 100%;
     background-color: #191919;
     padding: 80px 0;
     margin-top: 200px;
